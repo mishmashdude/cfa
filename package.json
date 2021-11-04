@@ -24,6 +24,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "@electron-forge/publisher-github": "^6.0.0-beta.61",
     "electron": "^13.1.0"
   },
   "dependencies": {
@@ -37,9 +38,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "electron_quick_start",
-            "certificateFile": "./cert.pfx",
-            "certificatePassword": "this-is-a-secret"
+            "name": "electron_quick_start"
           }
         },
         {
@@ -55,6 +54,17 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "mishmashdude",
+              "name": "cfa"
+            }
+          }
         }
       ]
     }
