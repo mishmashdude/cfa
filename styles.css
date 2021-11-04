@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(43, 135, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#game-text {
+    color: white;
+}
